@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Navbar from './components/Navbar';
 import BookList from './components/Booklist';
 import ThemeContextProvider from './contexts/ThemeContext';
+import './index.css';
 
 function App() {
   return (
