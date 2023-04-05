@@ -15,6 +15,10 @@ nav h1 {
   margin-bottom: 10px;
 }
 
+nav p {
+  text-align: center;
+  margin-bottom: 20px;
+}
 .book-list {
   padding: 20px 50px;
   max-width: 400px;
