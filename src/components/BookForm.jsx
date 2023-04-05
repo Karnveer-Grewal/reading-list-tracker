@@ -3,7 +3,7 @@ import { BookContext } from '../contexts/BookContext';
 import { ThemeContext } from '../contexts/ThemeContext';
 
 const BookForm = () => {
-  const { addBook, books } = useContext(BookContext);
+  const { dispatch, books } = useContext(BookContext);
   const { isLightTheme, light, dark } = useContext(ThemeContext);
 
   const [title, setTitle] = useState('');
@@ -14,7 +14,16 @@ const BookForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const id = books.length + 1;
-    addBook(title, author, id);
+    dispatch({
+      type: 'ADD_BOOK',
+      book: {
+        title,
+        author,
+        id,
+      },
+    });
+    setTitle('');
+    setAuthor('');
   };
 
   return (

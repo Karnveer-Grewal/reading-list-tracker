@@ -4,7 +4,7 @@ import { ThemeContext } from '../contexts/ThemeContext';
 
 const BookDetails = (props) => {
   const { title, author, id } = props;
-  const { removeBook } = useContext(BookContext);
+  const { dispatch } = useContext(BookContext);
   const { isLightTheme, light, dark } = useContext(ThemeContext);
   const theme = isLightTheme ? light : dark;
 
@@ -15,7 +15,7 @@ const BookDetails = (props) => {
       <button
         className='delete-button'
         style={{ background: theme.bg, color: theme.syntax }}
-        onClick={() => removeBook(id)}
+        onClick={() => dispatch({ type: 'REMOVE_BOOK', id })}
       >
         Remove Book
       </button>
