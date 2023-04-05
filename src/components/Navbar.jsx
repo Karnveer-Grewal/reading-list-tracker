@@ -6,7 +6,6 @@ import ThemeToggle from './ThemeToggle';
 const Navbar = () => {
   const { isLightTheme, light, dark } = useContext(ThemeContext);
   const { books } = useContext(BookContext);
-  console.log(books);
 
   const theme = isLightTheme ? light : dark;
 
