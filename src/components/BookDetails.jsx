@@ -10,8 +10,8 @@ const BookDetails = (props) => {
 
   return (
     <li style={{ background: theme.ui }}>
-      <h3>{title}</h3>
-      <p>{author}</p>
+      <h3 className='book-title'>{title}</h3>
+      <p className='book-author'>by: {author}</p>
       <button
         className='delete-button'
         style={{ background: theme.bg, color: theme.syntax }}

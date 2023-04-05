@@ -1,31 +1,51 @@
+/* Universal Styling */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
 }
 
+body {
+  background-color: #d2d2d2;
+}
+
+/* Nav Styling */
 nav {
-  max-width: 400px;
   margin: 0 auto;
   padding: 20px;
+  max-width: 100%;
 }
 
 nav h1 {
   text-align: center;
   margin-bottom: 10px;
+  font-size: 2em;
 }
 
 nav p {
   text-align: center;
   margin-bottom: 20px;
+  font-weight: 500;
 }
+
+.theme-button {
+  border: 1px solid grey;
+  padding: 5px;
+  display: block;
+  margin: 0 auto;
+  font-size: 0.75em;
+}
+
+/*Main Content Styling  */
 .book-list,
 .empty-books,
 .book-form {
   padding: 20px 50px;
-  max-width: 400px;
   margin-right: auto;
   margin-left: auto;
+  max-width: 100%;
 }
 
 .book-list ul li {
@@ -34,6 +54,16 @@ nav p {
   padding: 10px;
   text-align: center;
   border-radius: 10px;
+}
+
+.book-title {
+  font-weight: 700;
+  font-size: 1.25em;
+}
+
+.book-author {
+  margin-top: 5px;
+  font-size: 0.9em;
 }
 
 .empty-books {
@@ -45,27 +75,14 @@ nav p {
   font-size: 0.9em;
 }
 
-.theme-button {
-  border: 1px solid grey;
-  padding: 5px;
-  display: block;
-  margin: 0 auto;
-}
-
 .delete-button {
   border: 1px solid grey;
-  margin-top: 10px;
+  margin-top: 15px;
   padding: 4px;
   font-size: 0.7em;
 }
 
-.submit-button {
-  display: block;
-  padding: 5px;
-  border: 1px solid grey;
-  margin: 0 auto;
-}
-
+/* Book Form Styling */
 .book-form h3 {
   text-align: center;
   margin-bottom: 10px;
@@ -76,4 +93,36 @@ nav p {
   margin: 0 auto;
   padding: 3px;
   text-indent: 3px;
+  width: 45%;
+}
+.submit-button {
+  display: block;
+  padding: 5px;
+  border: 1px solid grey;
+  margin: 0 auto;
+  width: 45%;
+}
+
+/* Responsive Design Styling */
+
+@media screen and (min-width: 1035px) {
+  nav {
+    max-width: 75%;
+  }
+  .book-list,
+  .empty-books,
+  .book-form {
+    max-width: 75%;
+  }
+
+  .book-list ul li {
+    max-width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .book-form input,
+  .submit-button {
+    height: 30px;
+  }
 }

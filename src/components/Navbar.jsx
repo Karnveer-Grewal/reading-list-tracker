@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <nav style={{ background: theme.ui, color: theme.syntax }}>
       <h1>Reading List Tracker</h1>
-      <p>You have {books.length} to get through...</p>
+      <p>You have {books.length} book(s) to get through...</p>
       <ThemeToggle />
     </nav>
   );
