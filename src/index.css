@@ -20,7 +20,8 @@ nav p {
   margin-bottom: 20px;
 }
 .book-list,
-.empty-books {
+.empty-books,
+.book-form {
   padding: 20px 50px;
   max-width: 400px;
   margin-right: auto;
@@ -56,4 +57,23 @@ nav p {
   margin-top: 10px;
   padding: 4px;
   font-size: 0.7em;
+}
+
+.submit-button {
+  display: block;
+  padding: 5px;
+  border: 1px solid grey;
+  margin: 0 auto;
+}
+
+.book-form h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.book-form input {
+  display: block;
+  margin: 0 auto;
+  padding: 3px;
+  text-indent: 3px;
 }

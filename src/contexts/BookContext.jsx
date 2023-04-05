@@ -11,7 +11,8 @@ const BookContextProvider = ({ children }) => {
   const [books, setBooks] = useState(booksObj);
 
   const addBook = (title, author, id) => {
-    setBooks((prevBooks) => [...prevBooks, title, author, id]);
+    console.log('added');
+    setBooks((prevBooks) => [...prevBooks, { title, author, id }]);
   };
 
   const removeBook = (id) => {
