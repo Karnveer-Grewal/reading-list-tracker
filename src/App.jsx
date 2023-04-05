@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import BookList from './components/Booklist';
 import ThemeContextProvider from './contexts/ThemeContext';
 import './index.css';
+import ThemeToggle from './components/ThemeToggle';
 
 function App() {
   return (
